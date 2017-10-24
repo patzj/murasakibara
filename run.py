@@ -12,6 +12,7 @@ try:
         for site in sites:
             fin.write('{} {}\n'.format(IP, site))
             fin.write('{} www.{}\n'.format(IP, site))
+            fin.write('{} m.{}\n'.format(IP, site))
 
     os.system('sudo service network-manager restart')
     print 'OK'
